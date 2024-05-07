@@ -390,14 +390,17 @@ header button {
 
 #blog {
     width: 100dvw;
-    height: 100dvh;
+    height: 105dvh;
     background-image: linear-gradient(0deg, #f0ece3bf 92.5%, transparent);
     position: sticky;
     }
 
 #blog > h2 {
-    position: absolute;
+    /*position: absolute;*/
     top: 2em;
+    font-family: var(--primary-font);
+    font-size: 1.75rem;
+    font-weight: 400;
     left: calc(50% - 6.7vw);
     z-index: 100;
     }
@@ -512,7 +515,7 @@ header button {
 #blog > nav {
     visibility: hidden;
     }
-#blog ul{
+#blog > ul{
     display: none;
     }
 
@@ -657,13 +660,7 @@ path {
     }
 
 
-@media (max-height: 780px) and (min-width: 950px ){
-    /* Rpm choice */
-    
-    header fieldset {
-        bottom: 30vh;
-        }
-    }
+
 
 @media (min-height: 800px) and (min-width: 1335px) {
     body{
