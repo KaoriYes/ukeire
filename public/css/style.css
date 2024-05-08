@@ -687,7 +687,7 @@ path {
     /*     } */
     
     header nav {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         z-index: 200;
@@ -838,14 +838,14 @@ path {
         overflow: scroll;
         }
     
-    #blog > ul {
+    #blog nav ul {
         position: fixed;
         bottom: 1vh;
         z-index: 99999;
         display: flex;
         align-items: center;
         flex-wrap: nowrap;
-        width: calc(100% - 5.75rem)n;
+        width: calc(100% - 5.75rem);
         height: 3.25rem;
         max-height: 100%;
         margin: 0 2.25rem;
@@ -861,9 +861,10 @@ path {
         scroll-snap-type: x mandatory;
         -ms-overflow-style: none;
         scrollbar-width: none;
+        
         }
     
-    #blog > ul li button {
+    #blog nav ul li button {
         font-size: .9375rem;
         font-weight: 400;
         font-style: normal;
