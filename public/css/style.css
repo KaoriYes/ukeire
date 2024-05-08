@@ -175,8 +175,16 @@ header ul {
     list-style: none;
     gap: .3em;
     }
-
-
+a.unDone{
+    color: #828081;
+    font-weight: lighter;
+    }
+a.unDone:after{
+    display: none;
+    }
+a.unDone:before{
+    display: none;
+    }
 header ul li [aria-current="page"] {
     font-weight: 700;
     }
@@ -215,7 +223,7 @@ header section:nth-of-type(2) h2 {
     /* height: 2em; */
     overflow: hidden;
     transform: translate(-50%, -50%);
-    font-size: 1.75em;
+    font-size: 1.5rem;
     text-wrap: nowrap;
     color: white;
     border-radius: 2em;
@@ -675,12 +683,13 @@ path {
     
     
     body:has(input#ChoiceStandard:checked) header section:nth-of-type(2) {
-        animation:initial;
+        animation: rotating 3s linear infinite;
         }
     
     
     body:has(label:nth-of-type(1) input#stopAnimatie:checked) header section:nth-of-type(2) {
         animation: rotating 3s linear infinite;
+        animation-delay: .8s;
         }
     
     body:has(label:nth-of-type(1) input#stopAnimatie:checked) header > label:nth-of-type(1):before {
@@ -877,6 +886,7 @@ path {
         position: fixed;
         bottom: 1em;
         visibility: visible;
+        display: initial;
         overflow: scroll;
         }
     
