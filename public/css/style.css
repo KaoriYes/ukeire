@@ -409,7 +409,7 @@ header button {
     position: relative;
     display: grid;
     width: calc(100dvw - 8em);
-    height: calc(100dvh);
+    height: calc(100dvh - 6em);
     margin: 2em;
     padding: 2em;
     overflow-y: scroll;
@@ -425,10 +425,11 @@ header button {
     pointer-events: none;
     grid-column: 2 / -1;
     grid-row: 1 / -1;
+    position: relative;
     }
 
 #blog section > details > summary {
-    position: absolute;
+    position: fixed;
     left: 2em;
     display: flex;
     align-items: center;
@@ -437,7 +438,7 @@ header button {
     margin: 0 1em;
     padding: 0 1em;
     transform: translatey(5.5em);
-    font-size: 1.5rem;
+    font-size: clamp(.7rem, 2.5vw, 1.5rem);
     pointer-events: initial;
     background: var(--primary-color);
     box-shadow: var(--shadow);
@@ -445,10 +446,12 @@ header button {
 
 #blog > section > details > summary h2 {
     font-family: var(--primary-font);
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     font-weight: 300;
     }
-
+#blog > section > details:nth-of-type(6) > summary h2 {
+    font-size: 1rem;
+}
 #blog section > details section h4 {
     margin: 1em 0 .5em 0;
     }
