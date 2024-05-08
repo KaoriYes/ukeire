@@ -42,3 +42,14 @@ headerButton.onclick = showHeaderNav;
 function showHeaderNav() {
     headerNav.classList.toggle('show');
 }
+
+// const nav = document.querySelector('#nav');
+const navHome = document.querySelector('header nav li:nth-of-type(1)');
+const navBlog = document.querySelector('header nav li:nth-of-type(2)');
+
+function start(){
+    navHome.removeAttribute('aria-current'); // Remove aria-current from navHome
+    navBlog.setAttribute('aria-current', 'page'); // Set aria-current to 'page' for navBlog
+}
+
+start();

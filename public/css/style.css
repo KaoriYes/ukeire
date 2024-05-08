@@ -396,12 +396,12 @@ header button {
     }
 
 #blog > h2 {
-    /*position: absolute;*/
-    top: 2em;
+    position: absolute;
+    top: 4em;
     font-family: var(--primary-font);
     font-size: 1.75rem;
     font-weight: 400;
-    left: calc(50% - 6.7vw);
+    left: 3em;
     z-index: 100;
     }
 
@@ -449,8 +449,13 @@ header button {
     font-size: 1.15rem;
     font-weight: 300;
     }
+
+#blog > section > details:nth-of-type(6) > summary  {
+    box-shadow: none;
+    }
 #blog > section > details:nth-of-type(6) > summary h2 {
     font-size: 1rem;
+    color: #828081;
 }
 #blog section > details section h4 {
     margin: 1em 0 .5em 0;
@@ -513,6 +518,9 @@ header button {
 
 #blog section > details[open] > summary {
     box-shadow: 8px 8px 6px #1314443f;
+    }
+#blog > section > details:nth-of-type(6)[open] > summary {
+    box-shadow: var(--shadow);
     }
 
 #blog > nav {
@@ -605,6 +613,7 @@ path {
         position: fixed;
         right: 2em;
         bottom: 2em;
+        z-index: 9999;
         }
     header > label:nth-of-type(1):before{
         content: "Stop";
@@ -661,7 +670,12 @@ path {
         }
     
     }
-
+    body:has(label:nth-of-type(1) input#stopAnimatie:checked) .no-reduce {
+        display: none;
+        }
+    body:has(label:nth-of-type(1) input#stopAnimatie:checked) .reduce-only {
+        display: initial;
+    }
 
 
 
@@ -808,8 +822,8 @@ path {
         }
     
     #blog > h2 {
-        top: 1em;
-        left: 20%;
+        top: 0;
+        left: 10%;
         }
     
     #blog > section {
@@ -893,8 +907,8 @@ path {
     #blog > section {
         min-width: 0;
         height: 80dvh;
-        margin: 3em 0 2em 0;
-        padding: 0 1em 0 1em;
+        margin: 0 0 2em 0;
+        padding: 0 1em 0 1em
         }
     
     #blog section > details section {
