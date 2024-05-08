@@ -539,7 +539,7 @@ header button {
 #blog section > details section {
     width: 90%;
     height: max-content;
-    padding: 1.75em;
+    padding: 0 1.75em;
     }
 
 #blog section > details[open] > summary {
@@ -682,9 +682,6 @@ path {
         }
     
     
-    body:has(input#ChoiceStandard:checked) header section:nth-of-type(2) {
-        animation: rotating 3s linear infinite;
-        }
     
     
     body:has(label:nth-of-type(1) input#stopAnimatie:checked) header section:nth-of-type(2) {
@@ -813,6 +810,10 @@ path {
         right: 5vw;
         left: auto;
         }
+    body:has(input#ChoiceStandard:checked) header section:nth-of-type(2) {
+        animation: rotating 3s linear infinite;
+        }
+    
     
     header section:nth-of-type(2) > * {
         display: none;
@@ -864,9 +865,8 @@ path {
     #blog > section {
         width: fit-content;
         min-width: 22em;
-        height: 93vh;
-        /* transform: translateY(1em); */
-        margin: 2em 0;
+        height: 88vh;
+        margin: 2em 0 0 0;
         grid-template-columns: 1fr;
         }
     
