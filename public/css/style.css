@@ -61,6 +61,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 1.04em;
     }
 
 body {
@@ -224,7 +225,7 @@ header section:nth-of-type(2) h2 {
     overflow: hidden;
     transform: translate(-50%, -50%);
     font-size: 1.5rem;
-    text-wrap: nowrap;
+    text-wrap: none;
     color: white;
     border-radius: 2em;
     /* background-color: black; */
@@ -535,7 +536,9 @@ header button {
 #blog section > details:nth-of-type(7) > summary {
     top: calc(7 * var(--dist-det-week));
     }
-
+#blog section > details:nth-of-type(8) > summary {
+    top: calc(8 * var(--dist-det-week));
+    }
 #blog section > details section {
     width: 90%;
     height: max-content;
@@ -709,26 +712,9 @@ path {
         }
         
     }
-@media (min-height: 800px) and (min-width: 1335px) {
-    body {
-        /* background-color: yellow !important; */
-        }
-    
-    header div.toneArm {
-        rotate: 14deg;
-        }
-    }
 
 
 @media (max-width: 700px) {
-    
-    /* header nav { */
-    /*     display: none; */
-    /*     } */
-    /* header { */
-    /*     position: absolute; */
-    /*     display: flex; */
-    /*     } */
     header nav {
         position: fixed;
         top: 0;
