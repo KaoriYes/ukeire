@@ -543,6 +543,7 @@ header button {
     width: 90%;
     height: max-content;
     padding: 0 1.75em;
+    pointer-events: initial;
     }
 
 #blog section > details[open] > summary {
