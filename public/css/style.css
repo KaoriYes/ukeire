@@ -144,8 +144,8 @@ header {
 
 header:before {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     z-index: -2;
     width: 100vw;
     /* background-color: var(--primary-color); */
@@ -153,7 +153,7 @@ header:before {
     content: "";
     background-image: var(--background-dots);
     background-attachment: fixed;
-    background-position: 0% 0%;
+    background-position: 0 0;
     background-size: 5vmin 5vmin;
     background-repeat: repeat;
     }
@@ -225,7 +225,7 @@ header section:nth-of-type(2) h2 {
     overflow: hidden;
     transform: translate(-50%, -50%);
     font-size: 1.5rem;
-    text-wrap: none;
+    text-wrap: nowrap;
     color: white;
     border-radius: 2em;
     /* background-color: black; */
@@ -264,8 +264,12 @@ header section:nth-of-type(2) img {
     border-radius: 50%;
     object-position: 50% 40%;
     /* object-fit: fill; */
-    -webkit-mask: radial-gradient(transparent 1em, red 0);
     mask: radial-gradient(transparent 1em, red 0);
+    }
+
+header section:nth-of-type(2) img {
+    /*noinspection CssInvalidPropertyValue*/
+    -webkit-mask: radial-gradient(transparent 1em, red 0);
     }
 
 header div.toneArm {
@@ -288,7 +292,7 @@ header div.toneArm:before {
     width: 7.5em;
     height: 7.5em;
     content: "";
-    transform-origin: 0% 0%;
+    transform-origin: 0 0;
     background-image: radial-gradient(circle, rgba(0, 0, 0, 1) 13%, #828081bf 13%);
     border-radius: 50%;
     }
