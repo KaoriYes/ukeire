@@ -375,10 +375,11 @@ header button {
 #index {
     display: flex;
     flex-direction: column;
-    min-height: 80vh;
+    height: 90vh;
     margin: 5vh 5vw;
     background-color: #f0ece33f;
     gap: 2em;
+    position: relative;
     }
 
 #index h3 {
@@ -389,7 +390,7 @@ header button {
 
 /* Article In het kort */
 #index article.kort {
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     gap: .75em;
@@ -431,21 +432,23 @@ header button {
     }
 
 #index article.kort img {
-    position: absolute;
-    left: 10vw;
-    top: 3rem;
+    position: fixed;
+    left: 15vw;
+    top: 10vh;
     width: 0;
     height: 0;
     border-radius: 50%;
     transition: 0.1s, .6s ease-out, .6s ease-out;
     transform: rotate(720deg) ;
+    object-position: 50% 40%;
     }
 
 #index article.kort:hover img {
     height: 40vw;
     width: 40vw;
     transform: rotate(0deg);
-    translate: 15vw 5.75rem;
+    left: 30vw;
+    top: calc(50% - 20vw);
     }
 
 
