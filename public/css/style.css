@@ -423,11 +423,11 @@ header button {
 
 
 #index article.kort span {
-    -webkit-transition: .6s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
     }
 #index article.kort:hover span{
     color: white;
-    transition: .6s ease-in-out;
+    transition: .3s ease-in-out;
     }
 
 #index article.kort img {
