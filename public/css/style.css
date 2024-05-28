@@ -466,11 +466,11 @@ header button {
 
 #blog > a{
     position: absolute;
-    bottom: 0;
+    bottom: 1rem;
     left: 2rem;
     }
 #blog > a:first-of-type{
-    bottom: 2rem;
+    bottom: 3rem;
     }
 
 
