@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "node app.js"
+    "build": "npm install",
+    "start": "node server.js"
   },
   "main": "server.js",
   "dependencies": {

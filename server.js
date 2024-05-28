@@ -2,61 +2,37 @@ const express = require("express");
 const app = express();
 const http = require('http').Server(app);
 const port = 1337;
-// const { marked } = require('marked');
-// const fs = require('fs');
-
-
 
 require("dotenv").config();
 
-
-
-
 app.use(express.static('public'));
 
-
 app.set('view engine', 'ejs');
-
-
-
-
-
-
-
-
-
 
 app.get('/', (req, res) => {
     res.render('index');
 });
 
+
+let blog = '';
+app.get('/bewwwust/nerds', (req, res) => {
+    const blog = 'weeklynerds';
+    res.render('bewwwust', { blog });
+});
+app.get('/bewwwust/ethiek', (req, res) => {
+    const blog = 'dataEthiek';
+    res.render('bewwwust', { blog });
+});
+
+app.get('/bewwwust/filosofie', (req, res) => {
+    res.sendFile(__dirname + '/public/uploads/pdf/Datagebruik.pdf');
+
+});
 app.get('/bewwwust', (req, res) => {
-    res.render('bewwwust');
+    res.render('bewwwust', { blog });
 });
 
 
-// fs.readFile('readme.md', 'utf8', (err, data) => {
-//     if (err) {
-//         console.error('Error reading the file:', err);
-//         return;
-//     }
-//
-//     // Convert Markdown to HTML
-//     const html = marked(data);
-//
-//     // Manipulate the HTML content
-//     const modifiedHTML = html;
-//
-//     // Log the modified HTML content
-//     console.log(modifiedHTML);
-// });
-
-
-
-//
-// app.get('/api/:slug', (req) => {
-//     res.send
-// })
 http.listen(port, () => {
     console.log('Running on Port: ' + port);
 });
