@@ -421,6 +421,15 @@ header button {
     background-color: var(--CTA-color)
     }
 
+
+#index article.kort span {
+    -webkit-transition: .6s ease-in-out;
+    }
+#index article.kort:hover span{
+    color: white;
+    transition: .6s ease-in-out;
+    }
+
 #index article.kort img {
     position: absolute;
     left: 10vw;
