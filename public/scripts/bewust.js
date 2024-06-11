@@ -46,13 +46,13 @@ function showHeaderNav() {
 // const nav = document.querySelector('#nav');
 const navHome = document.querySelector('header nav ul li:nth-of-type(1) a');
 const navBlog = document.querySelector('header nav ul li:nth-of-type(3) a');
-
+const element = document.getElementById('blog');
 function start(){
     navHome.removeAttribute('aria-current'); // Remove aria-current from navHome
     console.log('test')
 
     navBlog.setAttribute('aria-current', 'page'); // Set aria-current to 'page' for navBlog
-    console.log(navBlog)
+
 }
 
 start();

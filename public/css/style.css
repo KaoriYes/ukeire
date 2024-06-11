@@ -71,7 +71,7 @@ body {
     color: var(--secondary-color);
     
     background-color: var(--primary-color);
-    
+    scroll-behavior: smooth;
     
     }
 
@@ -377,7 +377,7 @@ header button {
     flex-direction: column;
     height: 90vh;
     margin: 5vh 5vw;
-    background-color: #f0ece33f;
+    background-color: #f0ece37f;
     gap: 2em;
     position: relative;
     }
@@ -433,6 +433,7 @@ header button {
 
 #index article.kort img {
     position: fixed;
+    /* z-index: -1; */
     left: 15vw;
     top: 10vh;
     width: 0;
@@ -463,7 +464,7 @@ header button {
     position: sticky;
     width: 100dvw;
     height: 99dvh;
-    background-image: linear-gradient(0deg, #f0ece3bf 92.5%, transparent);
+    background-image: linear-gradient(0deg, #f0ece3ef 92.5%, transparent);
     
     }
 
