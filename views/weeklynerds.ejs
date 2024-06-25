@@ -222,24 +222,22 @@
       <h2>Nerd #8: Waag</h2>
     </summary>
     <section>
-      <h3>Weekly Nerd | Week 7 | Rosa Schuurman</h3>
-      <p>Rosa Schuurman is een creative coder, ze developed en maakt gave websites/producten en doet aan circuit
-        bending. In haar presentatie laat ze zien hoe dat te werk gaat en wat wij hiervan kunnen opsteken</p>
+      <h3>Weekly Nerd | Week 8 | Waag Society</h3>
+      <p>Waag society is een organisatie die zich bezig houdt met technologie en samenleving. Ze doen onderzoek naar de impact van technologie op de samenleving en proberen dit te verbeteren. Ze werken samen met verschillende partijen zoals de overheid, bedrijven en burgers. Ze hebben verschillende projecten lopen zoals het fairphone project en het fairbnb project.</p>
       <h4>Onderwerpen</h4>
       <ol>
-        <li>Creative coding</li>
-        <li>Circuit bending</li>
+        <li>Ethiek in technologie</li>
+        <li>De ideale telefoon</li>
       </ol>
       <hr>
       <h4>Leuke dingen</h4>
       <ul>
-        <li>Het circuit bending is iets dat ik zelf nooit zou hebben verwacht te zien, maar het is wel cool en lijkt me
-          gaaf om te proberen.</li>
+        <li>Er was vrij weinig leuks aan deze weekly nerd. Zoals te zien in mijn filosofie blog post, heb ik aandacht tijd besteed aan ethiek in data. Deze workshop was niet perse leerzaam, er werd weinig tijd besteed aan de bewust wording over de ethiek in technologie; maar een aantal simpele plakgedrukte vragen die net geen goede antwoorden kregen van klasgenoten.</li>
+        <li>Doordat die antwoorden direct werden genoteerd en bijgehouden, voelde het meer als een soort vermomemde survey.</li>
+        <li>Dit gold ook voor de ideale telefoon. Er werd niet echt gekeken naar de technologie die er al is, maar meer naar wat de mensen in de groep graag zouden willen. Dat was niet perse een nieuwe blik op een ideale telefoon, maar een stomme saaie opdracht waar je niks aan had. Naast gewoon werk van het invullen van een vermomde survey.</li>
       </ul>
       <h4>Reflectie</h4>
-      <p>De presentatie van Rosa was voor mij niet zo heel speciaal in alle eerlijkheid, het ging eigenlijk effectief
-        nergens over en ik werd er (relatief aan de andere) niet super warm van. Het was net niet nuttig of voor de hand
-        liggend. Wat we mee konden nemen was: "De status-quo niet per definitie accepteren", maar dat is zo vaag.</p>
+      <p>Zie hierboven. Ik ben erg teleurgesteld over deze weekly nerd. Naar mijn mening is het een goed idee om de nieuwe generatie developers een beeld te geven van de mogelijke ethische problemen die ze tegen kunnen komen. Dit was niet het geval. Het was een platgedrukte, nutteloze invuloefening.</p>
 
     </section>
   </details>
@@ -248,24 +246,45 @@
       <h2>Nerd #9: Pre-CSS Day</h2>
     </summary>
     <section>
-      <h3>Weekly Nerd | Week 7 | Rosa Schuurman</h3>
-      <p>Rosa Schuurman is een creative coder, ze developed en maakt gave websites/producten en doet aan circuit
-        bending. In haar presentatie laat ze zien hoe dat te werk gaat en wat wij hiervan kunnen opsteken</p>
+      <h3>Weekly Nerd | Week 9 | Pre-CSS Day</h3>
+      <p>Op de Pre CSS Day spreken Bramus en Miriam Suzanne over CSS.</p>
       <h4>Onderwerpen</h4>
       <ol>
-        <li>Creative coding</li>
-        <li>Circuit bending</li>
+        <li>
+          Bramus (chrome developer www.bram.us @bramusBlog)  https://slidr.io/bramus/mpa-view-transitions-are-here#23 slides van de presentatie: Aanrader
+          <p>Cross-document View Transitions for MPAs are here! live-transitions.pages.dev => Example</p>
+          <p>View Transitions: Same-Document virew transitions for single-page applications (chrome vorig jaar, Firefox onderweg, Safari atm nog niet)</p>
+          <p>View Transitions API give seamless transitions between pages. if(!document.startViewTransition){...} else -> browser makes two snapshots between the two changes and the updated content is shown with an animation.</p>
+          <p>The user-agent stylesheet:</p>
+          <code>
+            :root {
+    view-transition-name: root;
+} -> Browsers that have viewtransitions enabled
+          </code>
+          <p>Interupted viewtransitions skip to the end.</p>
+          <p>Crossdocument view transitions:
+You can now add a transition between two pages.
+No need for js to do this. a href is enough, now only add the CSS</p>
+          <p>Two conditions:</p>
+          <ol>
+            <li>The two url must have the same origin: https://example.com/page1 and https://example.com/page2 NOT https://login.example.com/page1 and https://example.com/page2</li>
+            <li>@view-transition { navigation: auto; } -> the browser will do the transition for you.</li>
+          </ol>
+        </li>
+        <li>
+          Miriam Suzanne
+          <a href="https://slides.oddbird.net/cq/pre-cssday/">https://slides.oddbird.net/cq/pre-cssday/</a>
+          <p>Op dit punt had Bramus al ruim vijf kwartier gepraat. Na een dag coderen was mijn concentratie toch wel aan het einde van zijn Latijn. Hierdoor heb ik de presentatie van Miriam zonder meer al niet helemaal aandachtig gevolgd, naast het feit dat ik al meerdere testen en codepagina's gemaakt heb van het onderwerp. De aanspraak om eht op te letten lag daarom minder hoog.</p>
+          <p>Des al niet te min was de presentatie wel nuttig en de onderwerpen die aan bod kwamen: mediaqueries en stylequeries, zijn super belangrijk voor CSS de komende jaren.</p>
+        </li>
       </ol>
       <hr>
       <h4>Leuke dingen</h4>
       <ul>
-        <li>Het circuit bending is iets dat ik zelf nooit zou hebben verwacht te zien, maar het is wel cool en lijkt me
-          gaaf om te proberen.</li>
+        <li>In alle eerlijkheid vond ik de presentatie van Bramus erg leuk en die van Miriam wat minder. Bramus heeft een beter 'stage present', hij lijkt een stuk comfortabeler te spreken en dat maakt luisteren ook makkelijker. View-transition boeioen mij enorm en ik ben zeker van plan om daar een aantal testen mee te doen!</li>
       </ul>
       <h4>Reflectie</h4>
-      <p>De presentatie van Rosa was voor mij niet zo heel speciaal in alle eerlijkheid, het ging eigenlijk effectief
-        nergens over en ik werd er (relatief aan de andere) niet super warm van. Het was net niet nuttig of voor de hand
-        liggend. Wat we mee konden nemen was: "De status-quo niet per definitie accepteren", maar dat is zo vaag.</p>
+      <p>De presentaties zelf waren wel goed, maar wat ik er precies aan had vond ik moeilijk aan te geven. Beide presentaties waren toch meer een info dump dan echt een coole weekly nerd, in vergelijking met de andere sprekers. Ik zou voor beide -- bij de onderwerpen van Miriam had ik dat dus al gedaan -- de docs kunnen lezen en net zo veel opsteken van de materie. Mogelijk zelfs meer. Desondanks was het wel vermakelijk en het event rondom de presentaties was inspirerend en een leuke manier om CSS nerds te spreken.</p>
 
     </section>
   </details>
