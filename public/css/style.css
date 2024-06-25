@@ -58,8 +58,6 @@
     }
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-size: 1.04em;
     }
@@ -382,6 +380,10 @@ header button {
     position: relative;
     }
 
+#index *{
+    margin: 0;
+    padding: 0;
+    }
 #index h3 {
     width: 15vw;
     font-size: 1rem;
@@ -425,6 +427,7 @@ header button {
 
 #index article.kort span {
     -webkit-transition: 1s ease-in-out;
+    
     }
 #index article.kort:hover span{
     color: white;
@@ -444,7 +447,7 @@ header button {
     object-position: 50% 40%;
     }
 
-#index article.kort:hover img {
+body:has(#index article.kort span:hover) #index article.kort img {
     height: 40vw;
     width: 40vw;
     transform: rotate(0deg);
@@ -608,6 +611,16 @@ header button {
 #blog section > details:nth-of-type(8) > summary {
     top: calc(8 * var(--dist-det-week));
     }
+#blog section > details:nth-of-type(9) > summary {
+    top: calc(9 * var(--dist-det-week));
+    }
+#blog section > details:nth-of-type(10) > summary {
+    top: calc(10 * var(--dist-det-week));
+    }
+#blog section > details:nth-of-type(11) > summary {
+    top: calc(11 * var(--dist-det-week));
+    }
+
 #blog section > details section {
     width: 90%;
     height: max-content;

@@ -24,7 +24,7 @@ No need for js to do this. a href is enough, now only add the CSS
 
 https://slides.oddbird.net/cq/pre-cssday/
 
-
+Bij deze presentatie was ik aan het einde van mijn Latijn, de presentatie van Bramus was al een lange zit. Vervolgens kwam Miriam Suzanne met een presentatie over CSS. Ik heb hier niet veel van meegekregen. Die duurde nog een extra uur en het was toch een stuk minder interessant dan de presentatie van Bramus, voornamelijk omdat ik al bekend was met de materie van Suzanne. Ik had een aantal testen gedaan met de tech en heb hierdoor eigenlijk niet veel opgestoken. 
 
 
 

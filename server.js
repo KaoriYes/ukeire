@@ -28,6 +28,10 @@ app.get('/bewwwust/filosofie', (req, res) => {
     res.sendFile(__dirname + '/public/uploads/pdf/Datagebruik.pdf');
 
 });
+app.get('/bewwwust/nerds/pdf/Design_veranderingen_form.pdf', (req, res) => {
+    res.sendFile(__dirname + '/public/uploads/pdf/Design_veranderingen_form.pdf');
+
+});
 app.get('/bewwwust', (req, res) => {
     res.render('bewwwust', { blog });
 });
